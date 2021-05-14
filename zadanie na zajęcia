@@ -35,3 +35,10 @@ plt.autoscale(False)
 ax.set_axis_off()
 plt.axis('equal');
 plt.title('liczba ludności w siatce')
+
+from mpl_toolkits.axes_grid1 import make_axes_locatable
+
+fig, ax = plt.subplots(1, 1)
+divider = make_axes_locatable(ax)
+cax = divider.append_axes("right", size="5%", pad=0.1)
+
