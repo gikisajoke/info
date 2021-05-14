@@ -46,3 +46,9 @@ map_df = geopandas.read_file(gdf)
 map_df.head()
 
 map_df.plot()
+
+plt.rcParams['figure.figsize'] = [50, 70] #height, width
+map_df.plot()
+
+population = pd.read_csv("data_province.csv", sep=";")
+population.head()
