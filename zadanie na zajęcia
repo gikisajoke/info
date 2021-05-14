@@ -52,3 +52,9 @@ map_df.plot()
 
 population = pd.read_csv("data_province.csv", sep=";")
 population.head()
+
+variable = 'population'
+vmin, vmax = 0, 50
+fig, ax = plt.subplots(1, figsize=(30, 10))
+ax.axis('off')
+
